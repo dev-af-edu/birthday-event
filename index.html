@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Birthday in History</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🎂 Your Birthday in History</h1>
+  <p>Pick your birth date and see sports, politics, crime, laws, inventions and more from that year, month and day.</p>
+  <form id="f">
+    <select id="day" aria-label="Day"></select>
+    <select id="month" aria-label="Month"></select>
+    <input id="year" type="number" min="1" max="2026" value="2000" aria-label="Year">
+    <button type="submit">Show Events</button>
+  </form>
+</header>
+<main>
+  <div id="status"></div>
+  <nav id="tabs" hidden>
+    <button data-scope="day" class="on">📅 Your Day</button>
+    <button data-scope="month">🗓️ Your Month</button>
+    <button data-scope="year">📆 Your Year</button>
+  </nav>
+  <nav id="cats" hidden></nav>
+  <section id="out"></section>
+</main>
+<footer>
+  Developed by <a href="https://ma-ahmad-profile.netlify.app/" target="_blank" rel="noopener">Ahmad Mandozai</a> ·
+  <a href="https://github.com/dev-af-edu" target="_blank" rel="noopener">GitHub</a><br>
+  <small>Data: Wikipedia / Wikimedia. Internet connection required.</small>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
